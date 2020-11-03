@@ -1,0 +1,19 @@
+import java.util.Scanner;
+//高一桐 2020/10/1
+public class caiquan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pc;
+		int player = 0;
+		int i = 1;
+		Scanner input = new Scanner(System.in);
+		while (i == 1) 
+		{
+			System.out.println("请输入0（剪刀），1（石头），2（布）");
+			pc = (int)(Math.random()*10-1)/3;
+			
+		}
+	}
+
+}

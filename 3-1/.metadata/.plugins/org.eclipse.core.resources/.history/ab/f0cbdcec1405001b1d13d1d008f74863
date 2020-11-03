@@ -1,0 +1,13 @@
+
+public class caiquan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("请输入0（剪刀），1（石头），2（布）");
+		int pc = 0;
+		while (true) {
+			pc = (int)(Math.random()*10)+1;
+		}
+	}
+
+}

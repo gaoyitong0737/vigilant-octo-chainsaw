@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int stature,weight,BMI;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Plase enter you stature (by/m) and weight (by/kg)");
+		stature = input.nextInt();
+		weight = input.nextInt();
+		BMI = (stature/weight)*(stature/weight);
+	}
+
+}

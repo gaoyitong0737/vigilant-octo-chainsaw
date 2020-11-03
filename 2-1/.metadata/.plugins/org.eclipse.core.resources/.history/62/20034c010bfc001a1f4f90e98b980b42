@@ -1,0 +1,14 @@
+
+public class bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double  interest,principal;
+		//  "interest" 利息  "principal" 本金
+		double  amount_due,interest_rate;
+		// "aomount_due" 到期金额 "interest_rate" 利率
+		int mouth;
+		// "mouth" 存款月数
+	}
+
+}

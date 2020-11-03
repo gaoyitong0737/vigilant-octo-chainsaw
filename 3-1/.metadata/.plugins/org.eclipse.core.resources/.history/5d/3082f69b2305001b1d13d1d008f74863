@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class triangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double x,y,z,s;
+		Scanner input = new Scanner(System.in);
+		while(true) {
+		System.out.println("");
+		x = input.nextDouble();
+		y = input.nextDouble();
+		z = input.nextDouble();
+		if(x-y > z || x-z > y || z-y > x) {
+			System.out.println("ÊäÈë´íÎó£¡");
+			break;
+			}
+		s=(x+y+z)/2;
+		Math.sqrt(s*(s-x)*(s-y)*(s-z));
+		}
+	}
+
+}

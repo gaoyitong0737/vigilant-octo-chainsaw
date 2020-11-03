@@ -1,0 +1,15 @@
+import java.util.Scanner;*;
+public class bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double  interest,principal;
+		//  "interest" 利息  "principal" 余额
+		double  amount_due,year_interest_rate,month_interest_rate;
+		// "aomount_due" 到期金额 "year_interest_rate" 年利率 "month_interest_rate" 月利率
+		int month;
+		// "month" 存款月数
+		Scanner input = new S
+	}
+
+}
