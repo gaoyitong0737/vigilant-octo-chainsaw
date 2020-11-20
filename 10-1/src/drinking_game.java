@@ -40,7 +40,7 @@ public class drinking_game {
 class Player extends drinking_game {
 	char name;
 	Player successor;
-    char c[] = {'革','向','南','越','夜','梅','鱼','依','萱','夕','翠','涂','红','屈','腾','初','夏','史','心','远','吕','悦'};
+	static char c[] = {'革','向','南','越','夜','梅','鱼','依','萱','夕','翠','涂','红','屈','腾','初','夏','史','心','远','吕','悦'};
     int 喝酒次数=0;
     static int number = 0;
     Player(){
@@ -60,8 +60,13 @@ class Player extends drinking_game {
 		}
     
 	public void getname() {
-		int i =(int)(Math.random() * c.length);
-		name = c[i];
+			int i =(int)(Math.random() * c.length);
+			if (c[i]!='空') {
+				name = c[i];
+				c[i]='空';	
+				}
+			else getname();
+			
 	}
 	
 	public Player[] paiwei(Player[] P){
@@ -82,15 +87,3 @@ class DrumBeator extends Player{
 		return Drum;
 	}
 }
-
-/*
-
-（1）定义游戏者类Player：有name属性，有一个Player类型的变量successor表示下一个人，有一个传花方法（听鼓声决定是否喝酒或传花的方法）handle()。
-
-（2）鼓声模拟：定义击鼓者类DrumBeator中增加静态函数getDrum()可返回随机数字1-10，当返回1时，表示击鼓停止。
-
-（3）传花模拟：在handle()方法中，如果击鼓停止（DrumBeator.getDrum()为1），就表示花在他手中，喝酒（输出一下），然后下传；如果击鼓没停止则直接下传。每次喝酒后，酒的数量减1，为0时终止游戏。
-
-（4）定义主程序，设定酒的初始数量，定义多个玩家并排座次，调用某个玩家的handle()方法开始游戏。游戏结束时，输出每人喝酒的数量和总的传花次数。
-
-提示：游戏者类中定义喝酒数量的变量，喝酒后加1；酒的数量和总传花次数在击鼓者类DrumBeator中定义静态变量。*/
